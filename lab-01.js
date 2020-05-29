@@ -1,6 +1,6 @@
 /*
-  Full Name:
-  Student ID:
+  Full Name: Shubhamjit Singh
+  Student ID: 200395159
 
   Instructions:
     Follow the steps below. If you have any questions
@@ -27,7 +27,30 @@
     Create an array that contains 4 people objects.
     Each object must have at least 2 properties.
 */
+    console.clear();
 
+    const people = [{
+
+        name: "John",
+        hobbie: "wrestling"
+
+    },{
+
+        name: "Roman",
+        hobbie: "sky diving"
+
+    },{
+
+        name: "Wade",
+        hobbie: "fighting"
+        
+    },{
+
+        name: "Rey",
+        hobbie: "using the force"
+        
+    }]
+    
 
 /*
   Step 2 (6 points):
@@ -38,6 +61,9 @@
     destructured.
 */
 
+    const bio = ({name, hobbie}) => {
+      console.log(`${name} is a fearless person as he does ${hobbie} very easily`);
+    }   
 
 /*
   Step 3 (3 points):
@@ -45,3 +71,7 @@
     Call your arrow function passing the array item
     as an argument.
 */
+
+for (const person of people) {
+  bio(person);
+}
